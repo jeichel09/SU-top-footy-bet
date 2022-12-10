@@ -1,0 +1,9 @@
+<div class="search-container">
+    <div>
+        <a href="/"><img src="../../../assets/png/logo-mini.png" class="logo"></a>
+    </div>
+    <form class="search-form" #form="ngForm" (ngSubmit)="onSubmit(form)">
+        <input class="search-input" name="search" ngModel placeholder="Search for a game"/>
+        <button class="search-button">Search</button>
+    </form>
+</div>

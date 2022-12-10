@@ -1,0 +1,5 @@
+FR - https://api.the-odds-api.com/v4/sports/soccer_france_ligue_one/odds?apiKey=07f68a110cbf46afdfccedf078ee0f83&regions=eu&markets=h2h&dateFormat=iso&oddsFormat=decimal
+EN - https://api.the-odds-api.com/v4/sports/soccer_epl/odds?apiKey=07f68a110cbf46afdfccedf078ee0f83&regions=eu&markets=h2h&dateFormat=iso&oddsFormat=decimal
+DE - https://api.the-odds-api.com/v4/sports/soccer_germany_bundesliga/odds?apiKey=07f68a110cbf46afdfccedf078ee0f83&regions=eu&markets=h2h&dateFormat=iso&oddsFormat=decimal
+ES - https://api.the-odds-api.com/v4/sports/soccer_spain_la_liga/odds?apiKey=07f68a110cbf46afdfccedf078ee0f83&regions=eu&markets=h2h&dateFormat=iso&oddsFormat=decimal
+IT - https://api.the-odds-api.com/v4/sports/soccer_italy_serie_a/odds?apiKey=07f68a110cbf46afdfccedf078ee0f83&regions=eu&markets=h2h&dateFormat=iso&oddsFormat=decimal
