@@ -1,0 +1,95 @@
+<form class="register-form" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div class="form-header">
+      <h1>Sign up with us:</h1>
+    </div>
+    <div class="form-body">
+      <label class="label-title">
+        First Name *
+        <input
+          type="text"
+          class="form-input"
+          formControlName="firstName"
+          id="fname"
+          name="firstname"
+          placeholder="enter your first name"
+        />
+        <mat-error *ngIf="registerForm.get('firstname')!.errors && registerForm.get('firstname')!.touched
+               ">{{getErrorMsg(registerForm, 'firstname')}}
+        </mat-error>
+      </label>
+      <label class="label-title">
+        Last Name
+        <input
+          type="text"
+          class="form-input"
+          formControlName="lastName"
+          id="lname"
+          name="lastname"
+          placeholder="enter your last name"
+        />
+      </label>
+      <label class="label-title">
+        Email *
+        <input
+          type="email"
+          class="form-input"
+          formControlName="email" 
+          id="email"
+          name="email"
+          placeholder="enter your best email"
+        />
+        <mat-error *ngIf="registerForm.get('email')!.errors && registerForm.get('email')!.touched
+               ">{{getErrorMsg(registerForm, 'email')}}
+        </mat-error>
+      </label>
+      <label class="label-title">
+        Username *
+        <input
+          type="text"
+          class="form-input"
+          formControlName="username"
+          id="username"
+          name="username"
+          placeholder="enter your desired username"
+        />
+        <mat-error *ngIf="registerForm.get('username')!.errors && registerForm.get('username')!.touched
+               ">{{getErrorMsg(registerForm, 'username')}}
+        </mat-error>
+      </label>
+      <label class="label-title">
+        Password *
+        <input
+          type="password"
+          class="form-input"
+          formControlName="password" 
+          id="password"
+          name="password"
+          placeholder="enter your password"
+        />
+        <mat-error *ngIf="registerForm.get('password')!.errors && registerForm.get('password')!.touched
+               ">{{getErrorMsg(registerForm, 'password')}}
+        </mat-error>
+      </label>
+      <label class="label-title">
+        Confirm Password *
+        <input
+          type="password"
+          class="form-input"
+          formControlName="repass"
+          id="repass"
+          name="repass"
+          placeholder="enter your password again"
+        />
+        <mat-error *ngIf="registerForm.get('repass')!.errors && registerForm.get('repass')!.touched
+               ">{{getErrorMsg(registerForm, 'repass')}}
+        </mat-error>
+      </label>
+    </div>
+    <div class="form-footer">
+      <span>* required</span>
+      <span class="auth-error" *ngIf="hasAuthError">Email has already been taken!</span>
+      <button type="submit" class="btn">Register</button>
+      <p class="sign-in">Already have an account? <span routerLink="/auth/login">Login</span></p>
+    </div>
+  </form>
+  
